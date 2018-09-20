@@ -30,5 +30,8 @@
     "style-loader": "^0.23.0",
     "webpack": "^4.19.1",
     "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "postcss-clean": "^1.1.0"
   }
 }

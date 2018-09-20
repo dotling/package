@@ -4,6 +4,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
+const PostcssClean = require('postcss-clean');
 
 module.exports = {
     target: "web", // Compilieren wird auf dem Browser ausgeführt
@@ -20,7 +21,7 @@ module.exports = {
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
-                        options: {}
+                        options: {sourceMap: true}
                     },
                     {
                         loader: 'css-loader',
@@ -33,6 +34,10 @@ module.exports = {
                             plugins: [
                                 autoprefixer({
                                     browsers: [">1%", "last 4 versions"]
+                                }),
+                                PostcssClean({
+                                    sourceMap: true,
+                                    level: 1
                                 })
                             ]
                         }
