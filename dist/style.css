@@ -1,0 +1,14 @@
+body div {
+  color: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+body {
+  background-color: #fff; }
+
+
+/*# sourceMappingURL=style.css.map*/

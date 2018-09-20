@@ -1,0 +1,9 @@
+$red: blue;
+
+body {
+    div {
+        color: $red;
+        display: flex;
+        justify-content: center;
+    }
+}
